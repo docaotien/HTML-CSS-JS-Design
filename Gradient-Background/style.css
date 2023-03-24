@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=M+PLUS+Rounded+1c&family=Roboto+Slab&display=swap');
+
+
+body {
+    /* padding: 0;
+    margin: 0;
+    box-sizing: border-box; */
+    background: linear-gradient(45deg,#ff0000,#fffb00,#5eff00,#ff5100,#00f7ff,#f700e2);
+    background-size: 900% 200%;
+    height: 90vh;
+    animation: animate 20s linear infinite;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+.clock {
+    width: 550px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: lightblue;
+    
+}
+
+.clock div {
+    height: 100%;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(14px);
+    padding: 55px;
+    font-size: 70px;
+    border: 3px lightblue solid;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    background-color: rgba(88, 82, 82, 0.3) 
+}
+
+
+.clock span {
+    padding: 10px;
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
